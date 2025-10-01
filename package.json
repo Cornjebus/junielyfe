@@ -15,7 +15,7 @@
     "db:migrate": "supabase db push --linked",
     "db:reset": "supabase db reset --linked",
     "db:link": "supabase link --project-ref jwpopvvaoipjjslrlpmg",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "workspaces": [
     "apps/*",
