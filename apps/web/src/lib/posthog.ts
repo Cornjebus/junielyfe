@@ -33,7 +33,7 @@ export function initPostHog() {
 /**
  * Identify user with Clerk ID
  */
-export function identifyUser(clerkUserId: string, properties?: Record<string, any>) {
+export function identifyUser(clerkUserId: string, properties?: Record<string, unknown>) {
   if (typeof window === 'undefined') return;
 
   posthog.identify(clerkUserId, properties);
@@ -42,7 +42,7 @@ export function identifyUser(clerkUserId: string, properties?: Record<string, an
 /**
  * Track custom event
  */
-export function trackEvent(eventName: string, properties?: Record<string, any>) {
+export function trackEvent(eventName: string, properties?: Record<string, unknown>) {
   if (typeof window === 'undefined') return;
 
   posthog.capture(eventName, properties);

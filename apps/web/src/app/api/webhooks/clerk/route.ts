@@ -2,6 +2,7 @@ import { Webhook } from 'svix';
 import { headers } from 'next/headers';
 import { WebhookEvent } from '@clerk/nextjs/server';
 import { createSupabaseServerClient } from '@junielyfe/db';
+import type { Json } from '@junielyfe/db';
 
 /**
  * Clerk Webhook Handler
@@ -62,7 +63,7 @@ export async function POST(req: Request) {
     .insert({
       event_type: evt.type,
       clerk_user_id: evt.data.id || null,
-      payload: evt.data as any,
+      payload: evt.data as unknown as Json,
       processed: false,
     });
 
