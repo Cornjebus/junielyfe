@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "paths": {
+      "@junielyfe/core": ["../../packages/core/src"],
+      "@junielyfe/db": ["../../packages/db/src"],
+      "@junielyfe/agents": ["../../packages/agents/src"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

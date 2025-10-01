@@ -1,0 +1,31 @@
+# Vercel build ignores
+node_modules
+.next
+.turbo
+dist
+*.log
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Documentation
+*.md
+!README.md
+
+# Local env files (will use Vercel env vars instead)
+.env.local
+.env*.local
+
+# Supabase local files
+supabase/.branches
+supabase/.temp
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store

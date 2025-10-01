@@ -1,0 +1,15 @@
+{
+  "extends": "@junielyfe/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@junielyfe/core": ["../../packages/core/src"],
+      "@junielyfe/db": ["../../packages/db/src"],
+      "@junielyfe/ui": ["../../packages/ui/src"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

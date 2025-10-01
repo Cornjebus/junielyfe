@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file
+
+# Ignore specific vulnerabilities (example - remove if not needed)
+# ignore:
+#   SNYK-JS-EXAMPLE-123456:
+#     - '*':
+#         reason: 'Not applicable to our use case'
+#         expires: '2025-12-31'
+
+# Patch directives
+patch: {}
+
+# Language settings
+language-settings:
+  node:
+    # Ignore devDependencies in production
+    prod-only: false
